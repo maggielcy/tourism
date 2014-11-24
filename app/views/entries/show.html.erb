@@ -1,0 +1,7 @@
+<h2 style="color: green; font-size: 20px; font-family: 'Times New Roman', Times, serif;"><%= @entry.title %></h2>
+ <p style="color: grey; font-size: 12px; font-family: 'Times New Roman', Times, serif;"><%= @entry.date %></p>
+ <p style="font-size: 14px; font-family: 'Times New Roman', Times, serif;"><%= @entry.contents %></p> 	 
+
+ <p><%= link_to("Edit this entry", edit_entry_path(@entry)) %></p>
+
+ <p><%= link_to("Back to all entries", entries_path) %></p>

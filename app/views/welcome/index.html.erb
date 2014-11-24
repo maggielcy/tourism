@@ -1,0 +1,58 @@
+<center><h1><p style="color: green; font-size: 40px; font-family: 'Arial'">Go Sustainable Tourism</h1></center>
+<center><p style="color: grey; font-family: 'Arial'"> Brings you to the most sustainable tourism destinations in the world!</p></center>
+
+<center><b><p style="color: purple; font-size: 30px; font-family: 'Arial'">*FEATURED DESTINATIONS*</p></b></center>
+
+
+<div style="float:left; display:block; width:500px; height: 260px">
+	
+<% for url, name in @website1 %>
+<b><a href="<%= url %>"><p style="color: #04B486; font-size: 20px; font-family: 'Arial'"><%= name %></p></a></b>
+<% end %>
+
+<img src="http://www.oceanprodivers.net/wp-content/uploads/2012/07/koh_lipe.jpg" /width=400 height=150>
+</div> 
+
+
+<div style="float:right; display:block; width:500px; height: 260px">
+
+<% for url, name in @website2 %>
+<b><a href="<%= url %>"><p style="color: #FE9A2E; font-size: 20px; font-family: 'Arial'"><%= name %></p></a></b>
+<% end %>    
+     
+
+<img src="http://www.holidaybazaar.travel/wp-content/uploads/2014/05/namibia.jpg" /width=400 height=150>
+</div>
+
+
+<div style="float:left; display:block; width:500px; height: 260px">
+    
+<% for url, name in @website3 %>
+<b><a href="<%= url %>"><p style="color: #7B5F0C; font-size: 20px; font-family: 'Arial'"><%= name %></p></a></b>
+<% end %>
+
+<img src="http://www.globeholidays.net/South_America/Peru/Media/Cusco_Machu_Picchu_Peru.jpg" /width=400 height=150>
+</div>
+
+
+<div style="float:right; display:block;width:500px; height: 260px">
+    
+<% for url, name in @website4 %>
+<b><a href="<%= url %>"><p style="color: #013ADF; font-size: 20px; font-family: 'Arial'"><%= name %></p></a></b>
+<% end %>
+
+<img src="http://www.abercrombiekent.co.uk/_assets/images/belize/belize.jpg" /width=400 height=150>
+</div>
+
+
+<center><h1><p style="color: purple; font-size: 30px; font-family: 'Arial'"><%= link_to("*DESTINATION NEWS*", entries_path) %></p><h1></center>
+
+
+<% for entry in @entries %>
+<h2 style="color: green; font-size: 20px; font-family: 'Times New Roman', Times, serif;"><%= entry.title %></h2>
+<p style="color: grey; font-size: 12px; font-family: 'Times New Roman', Times, serif;"><%= entry.date %></p>
+<p style="font-size: 14px; font-family: 'Times New Roman', Times, serif;"><%= entry.contents %></p>
+<% end %>
+
+
+<center><p style="color: grey; font-size: 10px; font-family: 'Arial'">Web Creator: Chenyan Lu</center>
