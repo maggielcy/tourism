@@ -1,0 +1,20 @@
+[SIPA Coding INAFU6003] Assignment Submission-Chenyan Lu
+
+
+Dear Professor:
+
+My github links are as follows, and I have also uploaded both zip files in the dropbox in Coursework:
+
+Weekend project: https://github.com/maggielcy/diary
+Final project: https://github.com/maggielcy/tourism
+
+p.s.
+I used {entry_params = params["entry"]} instead of {entry_params = params["entry"].permit("title", "contents")} for "create" and"update" the entry, and they works.
+
+Thank you so much for the 3-day course, and I really enjoyed it!
+
+Best regards,
+Chenyan Lu
+
+
+
